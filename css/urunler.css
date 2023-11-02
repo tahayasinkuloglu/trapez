@@ -1,0 +1,552 @@
+.content-bg {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.products-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-shadow: 0 0 20px #0000006b;
+    text-align: center;
+    font-weight: 800;
+    font-size: 80px;
+    height: 500px;
+}
+
+.products-header > p {
+    padding-top: 50px;
+}
+
+.products-container {
+    background: url(https://www.transparenttextures.com/patterns/gplay.png);
+    background-color: #dee6ea;
+}
+
+.products-body {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    padding-top: 40px;
+    gap: 40px;
+}
+
+.sticky {
+    position: sticky !important;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    top: 100px;
+}
+
+.sticky > a {
+    font-size: 16px;
+    color: #032D78;
+    width: 250px;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sticky > a::after {
+    border: 2px solid #032D78;
+    content: "";
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    right: 0;
+    bottom: 0;
+    transition: all .3s ease-out;
+}
+
+.sticky > a::before {
+    border: 2px solid #032D78;
+    content: "";
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    left: 0;
+    top: 0;
+    transition: all .3s ease-out;
+}
+
+.sticky > a:hover::before, .sticky > a:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+.sticky > span {
+    padding: 10px 20px;
+    background-color: #032D78;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.products-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.products-item {
+    transition: all .3s ease-out;
+    display: flex;
+    background-color: #FFF;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    margin-bottom: 40px;
+}
+
+.products-item > a {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+
+.products-item-content {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.products-img-container {
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    transition: all .2s ease;
+}
+
+.products-item-content > p:nth-child(3) {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+hr {
+    opacity: .25;
+    height: 5px !important;
+    width: 100%;
+    border-radius: 10px !important;
+    background-color: #032D78 !important;
+    margin: 15px 0px 15px 0px;
+}
+
+.products-item-content > h6 {
+    font-size: 20px;
+    position: relative;
+}
+
+.products-item-content > h6::after {
+    display: flex;
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 50px;
+    background-color: #032D78;
+    border-radius: 10px;
+    margin-top: 8px;
+    transition: width .2s ease;
+}
+
+.products-item > a:hover h6 {
+    color:#032D78
+}
+
+.products-item > a:hover h6::after {
+    width: 70px;
+}
+
+.products-item > a:hover .products-link {
+    color: #032D78;
+}
+
+.products-item:hover .products-img {
+    transform: rotate(-3deg);
+}
+
+.products-item:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 14px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 2px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.main-link {
+    font-size: 16px;
+    color: #032D78;
+    width: 250px;
+    border: 2px solid #032D78;
+    padding: 16px;
+}
+
+.main-link-a {
+    color: #032D78;
+}
+
+.main-link > p {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.main-link > ul > li {
+    padding-left: 20px;
+    transition: font-weight .1s ease;
+}
+
+.main-link > ul > li:hover {
+    font-weight: bold;
+}
+
+
+/* KATEGORİSEL ÜRÜNLER */
+
+.trapez-container {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    padding: 16px;
+    margin-bottom: 40px;
+}
+
+
+.trapez-content {
+    display: flex;
+}
+
+.trapez-link {
+    color: #032D78;
+    font-size: 18px;
+    padding: 18px 20px;
+    position: relative;
+    max-width: max-content;
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: color .2s ease;
+}
+
+.trapez-link > a {    
+    transition: all .2s ease;
+}
+
+.trapez-link::after {
+    content: "";
+    background-color: #032D78;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    left: 10%;
+    z-index: 0;
+    transition: all .2s ease;
+}
+
+.trapez-link:hover::after {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    transition: all .2s ease;
+    border-radius: 6px;
+}
+
+.trapez-link:hover {
+    color: #FFF;
+}
+
+.trapez-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+}
+
+.trapez-body-info > h5,
+.trapez-body-table > h5 {
+    font-size: 20px;
+    color: #252422;
+    font-weight: 600;
+}
+
+.trapez-body-info > hr,
+.trapez-body-table > hr {
+    opacity: 0.25;
+    margin: 16px 0px;
+    border: 0;
+    height: 3px !important;
+    background-color: #032D78 !important;
+    border-radius: 10px !important;
+    width: 100%;
+}
+
+.trapez-body-info > p {
+    line-height: 25px;
+    margin: 10px 0px 40px 0px;
+}
+
+.trapez-Table {
+    width: 100%;
+    border-color: #dee2e6;
+    border-collapse: collapse;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.trapez-Table > thead > tr {
+    border-color: #000;
+}
+
+.trapez-Table > * > * > * {
+    padding: 8px 8px !important;
+    border-bottom-width: 1px !important;
+}
+
+.trapez-Table > th {
+    border-color: #000;
+}
+
+.trapez-Table > thead, tr, th, tbody, td {
+    border-color: inherit;
+    border-width: 0;
+    border-style: solid;    
+}
+
+.trapez-Table > tbody > tr:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.vida {
+    height: 550px !important;
+}
+
+.order-quantity > table,
+.order-area > table {
+    border: 1px solid #032D78;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    color: rgb(92, 92, 92);
+}
+
+.order-quantity > table > thead {
+    background-color: transparent;
+    color: rgb(92, 92, 92);
+}
+
+.order-area > table > thead {
+    background-color: transparent;
+    color: rgb(92, 92, 92);
+}
+
+.order-quantity > table > tbody > tr > td,
+.order-area > table > tbody > tr > td,
+.order-quantity > table > thead > tr > th,
+.order-area > table > thead > tr > th
+ {
+    padding: 10px;
+    width: 100px;
+    border: 1px solid #032D78;
+}
+
+.form-control {
+    border: 1px solid #032D78;
+    outline: none;
+    padding: 10px;
+    width: 70%;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+}
+
+.form-control::placeholder {
+    font-weight: lighter;
+}
+
+.form-control {
+    color: rgb(92, 92, 92);
+    
+}
+
+.order-area-container {
+    display: none;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 8px 14px;
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    color: #000;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 4px;
+    border-bottom: 2px solid #032D78;
+    background: transparent;
+    z-index: 1;
+    transition: all .2s ease;
+}
+
+.btn-quantity {
+    background-color: #032D78;
+    color: #FFF;
+}
+
+.btn:hover {
+    background: #032D78 !important;
+    color: #FFF !important;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+@media (max-width: 1350px) {
+    .products-body {
+        width: 85%;
+    }
+
+    .products-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .products-body {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .products-navbar {
+        text-align: center;
+    }
+
+    .sticky > a {
+        width: 100%;
+    }
+
+    .main-link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 850px) {
+    .trapez-content {
+        flex-direction: column;
+    }
+
+    .products-img-container,
+    .products-item-content {
+        width: 100%;
+    }
+
+    .products-body {
+        width: 85%;
+    }
+}
+
+@media (max-width: 700px) {
+    .products-item-content {
+        text-align: center;
+    }
+
+    .products-item {
+        padding: 0px;
+    }
+
+    .products-title {
+        display: flex;
+        text-align: start;
+    }
+
+    .products-item > a {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .products-item-content{
+        width: 100%;
+    }
+
+    .products-img-container {
+        width: 100%;
+    }
+
+    .products-header {
+        font-size: 50px;
+        height: 300px;
+    }
+
+    .content-bg {
+        height: 300px;
+    }
+
+    .products-item-content > h6::after {
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+@media (max-width: 675px) {
+    .trapez-body-table {
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width: 428px) {
+    .producst-item {
+        max-width: min-content;
+        overflow: hidden;
+    }
+
+    .products-item-content {
+        max-width: 100%;
+    }
+
+    .products-img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .order-quantity > table > tbody > tr > td,
+    .order-area > table > tbody > tr > td,
+    .order-quantity > table > thead > tr > th,
+    .order-area > table > thead > tr > th
+    {
+        width: auto;
+        padding: 5px;
+    }
+}

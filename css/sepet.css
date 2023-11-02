@@ -295,7 +295,7 @@ tbody > tr > td {
     height: auto;
     width: 80%;
     margin: auto;
-    padding: 110px 0px;
+    padding: 110px 0px 0px 0px;
 }
 
 .success > h2 {
@@ -307,11 +307,15 @@ tbody > tr > td {
 .success > p {
     font-size: 20px;
     margin-top: 10px;
+    padding: 0px 20px;
+    text-align: center;
 }
 
 .success > span {
     margin-top: 30px;
     text-decoration: underline;
+    width: 100%;
+    text-align: center;
 }
 
 .success-img {
@@ -391,6 +395,12 @@ tbody > tr > td {
 
     .success {
         width: 100%;
+    }
+}
+
+@media (max-width: 820px) {
+    .success > p {
+        font-size: 16px;
     }
 }
 

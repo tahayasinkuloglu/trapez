@@ -377,6 +377,7 @@ hr {
 }
 
 .form-control {
+    color: rgb(92, 92, 92);
     border: 1px solid #032D78;
     outline: none;
     padding: 10px;
@@ -387,11 +388,6 @@ hr {
 
 .form-control::placeholder {
     font-weight: lighter;
-}
-
-.form-control {
-    color: rgb(92, 92, 92);
-    
 }
 
 .order-area-container {

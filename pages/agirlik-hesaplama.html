@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teklif Talebi Oluştur</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/kurumsal.css" />
-    <link rel="stylesheet" href="../css/sepet.css" />
+    <link rel="stylesheet" href="../css/calculator.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@200;300;400;500&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -101,33 +100,91 @@
           </button>
         </div>
       </nav>
-      <div class="cart-page">
-        <div class="content-header confirm-header">
-          <p>Teklif Talebi</p>
-          <img
-            class="content-bg confirm-img"
-            src="/assets/about.jpg"
-            style="object-position: center; height: 400px"
-          />
-        </div>
-        <div class="success-container">
-          <div class="success">
-            <img src="/assets/success.png" class="success-img" />
-            <h2>Talebiniz Başarıyla Oluşturuldu!</h2>
-            <p>
-              En kısa sürede sizlere geri dönüş sağlayacağız, bizleri tercih
-              ettiğiniz için teşekkür ederiz.
-            </p>
-            <span>Talep Kodunuz: <b>#AC471</b></span>
+      <div class="cnt">
+        <form action="" class="calcForm">
+          <div class="form-header">
+            <h1>Trapez Sac Ağırlık Hesaplama</h1>
           </div>
+          <div class="firstPick picks">
+            <span class="select-header">KULLANIM ALANI</span>
+            <select name="" id="firstPick">
+              <option class="customOption" disabled selected>
+                Kullanım Alanı
+              </option>
+              <option class="customOption" value="catiVeCepheTrapezSac">
+                Çatı ve Cephe Trapez Sac
+              </option>
+              <option class="customOption" value="betonAltiTrapezSac">
+                Beton Altı Trapez Sac
+              </option>
+            </select>
+          </div>
+          <div class="secondPick picks">
+            <span class="select-header">ÜRÜN TİPİ</span>
+            <select name="" id="secondPick" disabled>
+              <option class="customOption">Ürün Tipi</option>
+            </select>
+          </div>
+          <div class="thirdPick picks">
+            <span class="select-header">KAPLAMA TÜRÜ</span>
+            <select name="" id="thirdPick" disabled>
+              <option class="customOption">Kaplama Türü</option>
+            </select>
+          </div>
+          <div class="fourthPick picks">
+            <span class="select-header">SAC KALINLIĞI</span>
+            <select name="" id="fourthPick" disabled>
+              <option class="customOption">Sac Kalınlığı</option>
+            </select>
+          </div>
+          <div class="picks">
+            <input
+              id="input_metre"
+              type="text"
+              placeholder="Uzunluk (metre)"
+              disabled
+            />
+          </div>
+          <div class="picks">
+            <input id="input_adet" type="text" placeholder="Adet" disabled />
+          </div>
+          <div class="picks">
+            <input id="input_alan" type="text" placeholder="Alan m²" disabled />
+          </div>
+          <div class="picks custom_Margin">
+            <input type="text" placeholder="Adet Kg" readonly />
+            <input type="text" placeholder="Toplam Kg" readonly />
+          </div>
+        </form>
+        <div class="form-img">
+          <p class="form-img-p">Teknik Resim</p>
+          <p>Trapez Sac, Beton Altı Trapez Sac, Boyalı Trapez Sac</p>
+          <div id="form-img">
+            <img src="../assets/27-200-80cm.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="form-text">
+          <button class="print" onclick="window.print();return false;">
+            YAZDIR
+          </button>
+          <h2 class="text-header">TRAPEZ SAC HESAPLAMA</h2>
+          <p class="text">
+            Trapez Sac Fiyatları hesaplamak için hazırlamış olduğumuz programı
+            kullanabilirsiniz.
+          </p>
+          <p class="text">
+            Program içerisindeki menüden, uygulama yapılacak alana göre Trapez
+            Sac, Beton Altı Trapez Sac, Galvaniz Sac, Çatı Sacı, Boyalı Trapez
+            Sac ve Oluklu Sac Demir fiyatlarını hesaplayabilirsiniz.
+          </p>
         </div>
       </div>
       <div class="mobile-menu">
         <div class="mobile">
-          <a href="/index.html" class="home mobile-active">
+          <a href="/index.html" class="home">
             <i class="fa-solid fa-house"></i>
           </a>
-          <a href="/pages/kurumsal.html" class="kurumsal">
+          <a href="/pages/kurumsal.html" class="kurumsal mobile-active">
             <i class="fa-solid fa-user"></i>
           </a>
           <a href="/pages/products.html" class="products">
@@ -135,7 +192,7 @@
           </a>
         </div>
       </div>
-      <div class="footer success-footer">
+      <div class="footer">
         <div class="footer-container">
           <span class="footer-brand"> Çolakoğlu® Metalurji 2023 </span>
           <span class="footer-address">
@@ -186,6 +243,7 @@
         </div>
       </div>
     </div>
+    <script src="../js/trapez-agirlik-hesaplama.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,202 @@
+.cnt {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 150px 0px 50px 0px;
+}
+
+form {
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  background-color: #032e78;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 10px;
+}
+
+.form-img {
+  width: 50%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form-img-p {
+  margin-bottom: 10px;
+}
+
+#form-img > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.picks {
+  width: calc(50% - 16px);
+}
+
+.picks > select {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.picks > input {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  outline: none;
+}
+
+.picks > input:not(:read-only)::placeholder {
+  color: #000;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.select-header {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-header > h1 {
+  background-color: #fff;
+  color: #032e78;
+  width: max-content;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 36px;
+}
+
+.custom_Margin {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.form-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.text-header {
+  font-size: 26px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.print {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 10px 20px;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  form,
+  .form-img,
+  .form-text {
+    width: 80%;
+  }
+
+  .form-header > h1 {
+    font-size: 30px;
+  }
+
+  .form-header {
+    margin: auto auto 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  form,
+  .form-img,
+  .form-text {
+    width: 90%;
+  }
+
+  .select-header,
+  .picks > select,
+  .picks > input {
+    font-size: 16px;
+  }
+
+  .form-header > h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 550px) {
+  .picks {
+    width: 100%;
+  }
+
+  .picks > input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .picks > select,
+  option {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .picks > input {
+    font-size: 14px;
+  }
+
+  .picks > select,
+  option {
+    font-size: 14px;
+  }
+
+  .select-header {
+    font-size: 14px;
+  }
+
+  .form-header > h1 {
+    font-size: 18px;
+  }
+
+  .form-header {
+    margin: auto auto 0px auto;
+  }
+}

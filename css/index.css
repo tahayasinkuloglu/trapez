@@ -112,15 +112,12 @@
 }
 
 /*  RESPONSIVE  */
-
 @media (max-width: 768px) {
   .container-title {
     font-size: 50px;
     line-height: 50px;
   }
-}
 
-@media (max-width: 600px) {
   .sub-container {
     flex-direction: column;
     justify-content: center;
@@ -143,6 +140,12 @@
   .cattegory-link > img {
     max-width: 75%;
     height: 75%;
+    border: 2px solid #FFF;
+  }
+
+  .cattegory-link::after,
+  .cattegory-link::before {
+    display: none;
   }
 }
 

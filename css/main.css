@@ -352,6 +352,11 @@ html {
   font-size: 60px;
   margin-bottom: 30px;
   width: 100%;
+  padding-top: 40px;
+}
+
+#contact-text {
+  resize: none;
 }
 
 .map {
@@ -453,7 +458,7 @@ textarea {
 .info-container-text > h1 {
   text-align: center;
   margin-bottom: 34px;
-  padding-top: 120px;
+  padding-top: 140px;
 }
 
 .info-container-text > p {
